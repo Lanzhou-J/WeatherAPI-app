@@ -21,7 +21,9 @@ form.addEventListener("submit",(event)=>{
 function refreshPage(){
     window.location.reload();
 } 
-city = localStorage.getItem("input")
+city = localStorage.getItem("input");
+city = city.charAt(0).toUpperCase() + city.slice(1);
+city = city.replace(" ","_")
 
 
 const getWeather = async () => {
