@@ -3,8 +3,8 @@ export function renderWeather(){
 
   // const paragraph = document.querySelector("p");
   const h2 = document.querySelector("h2")
+  const h3 = document.querySelector("h3")
   const ol = document.querySelector("ol")
-
 
 
   // paragraph.innerText = JSON.stringify(weather.current);
@@ -14,4 +14,5 @@ export function renderWeather(){
     ol.prepend(newDiv)
   }
   h2.innerText = weather.request.query
+  h3.innerText = moment().format('MMMM Do YYYY, h:mm:ss a')
 }
