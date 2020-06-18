@@ -19,8 +19,6 @@ export function renderWeather(){
     `<img src="${pngPic}"/>`
   )
   
-
-
   _.assign(weather.current, new newTime);
   delete weather.current.weather_icons
 
