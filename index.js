@@ -11,7 +11,6 @@ import {handlePromise} from "./handlepromise.js"
 import {renderWeather} from "./renderweather.js"
 import { buttonClick } from "./button.js";
 
-
 handlePromise()
 renderWeather()
 buttonClick()
